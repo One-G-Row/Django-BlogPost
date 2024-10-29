@@ -1,0 +1,38 @@
+.post_title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 24pt;
+  font-weight: bold;
+  text-align: center;
+  background-color: blue;
+  color: white;
+  width: 80vw;
+  height: 25vh;
+  position: relative;
+  top: 10vh;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.post_title h1 {
+  position: relative;
+  top: 20%;
+}
+
+.post_text {
+  font-family: "dancing script", cursive;
+  font-size: 16pt;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 40vh;
+  box-shadow: 0 2px 8px rgba(0, 0, 0.26);
+  margin: auto;
+  position: relative;
+  top: 10vh;
+}
+
+.post_text p {
+  position: relative;
+  top: 10%;
+  padding-left: 10px;
+}

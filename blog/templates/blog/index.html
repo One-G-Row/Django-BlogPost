@@ -1,0 +1,28 @@
+{% extends "base.html" %} 
+{% load static %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static "blog/index.css"%}">
+{% endblock %}
+
+{% block content %}
+  {% include "blog/includes/header.html" %}
+
+  <div class="profile">
+    <img src= {% static image %%} alt={{context.name}}/>
+    <h1 class="profile-heading">{{context.title}}</h1>
+    <p class="profile-text">{{context.text}}</p>
+  </div>
+  <div class="images-container">
+    {% for post in posts%}
+    <a href="{% url "myposts" title=post.title %}">
+    <div class="index-cards">
+      <img src={% static post.image %} >
+      <h1>{{post.title}}</h1>
+      <p>{{post.text}}</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+
+{% endblock %}
