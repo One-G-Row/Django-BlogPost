@@ -3,7 +3,7 @@
   font-size: 24pt;
   font-weight: bold;
   text-align: center;
-  background-color: blue;
+  background-color: rgb(123, 123, 172);;
   color: white;
   width: 80vw;
   height: 25vh;
@@ -16,6 +16,13 @@
 .post_title h1 {
   position: relative;
   top: 20%;
+}
+.post_title:hover{
+background-color: white;
+}
+
+.post_title h1:hover{
+  color: rgb(123, 123, 172);
 }
 
 .post_text {

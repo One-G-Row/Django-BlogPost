@@ -1,28 +1,32 @@
 {% extends "base.html" %} 
-{% load static %}
+{% load static %} 
 
-{% block css_files %}
-  <link rel="stylesheet" href="{% static "blog/index.css"%}">
-{% endblock %}
+{% block css_files %} 
+  <link rel="stylesheet" href="{% static "blog/index.css"%}"> 
+{% endblock %} 
 
-{% block content %}
+{% block content %} 
   {% include "blog/includes/header.html" %}
 
-  <div class="profile">
-    <img src= {% static image %%} alt={{context.name}}/>
-    <h1 class="profile-heading">{{context.title}}</h1>
-    <p class="profile-text">{{context.text}}</p>
-  </div>
-  <div class="images-container">
-    {% for post in posts%}
-    <a href="{% url "myposts" title=post.title %}">
+<div class="profile">
+  <img src="static/blog/images/Faith.png" alt="{{profile.name}}" />
+  {% for profile in profiles %}
+  <h1 class="profile-heading">{{profile.title}}</h1>
+  <p class="profile-text">{{profile.text}}</p>
+  {% endfor %}
+</div>
+
+<div class="images-container">
+  {% for post in posts %}
+    <a href="{{ post.get_absolute_url }}">
     <div class="index-cards">
-      <img src={% static post.image %} >
-      <h1>{{post.title}}</h1>
-      <p>{{post.text}}</p>
-      </div>
-    </a>
-    {% endfor %}
-  </div>
+      <img src="{% static post.image_name %}" />
+      <h1 class="index-heading">{{post.title}}</h1>
+      <p class="index-author">{{post.author}}</p>
+      <p class="index-excerpt">{{post.excerpt}}</p>
+    </div>
+  </a>
+  {% endfor %}
+</div>
 
 {% endblock %}

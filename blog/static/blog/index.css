@@ -1,10 +1,15 @@
 .profile {
   height: 40vh;
-  width: 100vw;
-  background-color: blue;
+  width: 100%;
+  background-color: rgb(123, 123, 172);
   position: relative;
   top: 8vh;
 }
+
+.profile:hover{
+background-color: white;
+}
+
 .profile img {
   height: 30vh;
   width: 15vw;
@@ -25,15 +30,17 @@
   font-size: 24pt;
   font-weight: bold;
   text-align: center;
+  color: white;
   position: absolute;
-  left: 30%;
-  top: 10%;
+  left: 22%;
+  top: 5%;
 }
+
 .profile-heading:hover {
   transition: transform 0.3s ease; /* Smooth transition for the transform effect */
   transform: translateZ(0);
   transform: scale(1.1);
-  color: #fff;
+  color: rgb(123, 123, 172);
 }
 
 .profile-text {
@@ -42,7 +49,7 @@
   text-align: center;
   position: absolute;
   left: 30%;
-  top: 20%;
+  top: 5%;
 }
 
 .profile-text:hover {
@@ -77,7 +84,7 @@
   align-items: center;
   border-radius: 10px;
 }
-.images-container a{
+.images-container a {
   text-decoration: none;
   color: black;
 }
@@ -101,4 +108,14 @@
 
 .images-container p {
   font-size: 12pt;
+}
+
+.index-author {
+  font-weight: bold;
+}
+
+.index-heading:hover,
+.index-author:hover,
+.index-excerpt:hover {
+  color: rgb(123, 123, 172);
 }
