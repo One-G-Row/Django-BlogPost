@@ -5,8 +5,8 @@
   text-align: center;
   background-color: rgb(123, 123, 172);;
   color: white;
-  width: 80vw;
-  height: 25vh;
+  width: 80%;
+  height: 30%;
   position: relative;
   top: 10vh;
   border-radius: 10px;
@@ -15,14 +15,28 @@
 
 .post_title h1 {
   position: relative;
-  top: 20%;
-}
-.post_title:hover{
-background-color: white;
+  top: 8%; 
 }
 
-.post_title h1:hover{
-  color: rgb(123, 123, 172);
+.post_title:hover{
+background-color: #fff;
+color: rgb(123, 123, 172)
+}
+
+.span_author, .span_date{
+  font-weight: bold;
+  font-size: 12pt;
+  position: relative; 
+  top: 9%;
+}
+
+.span_author a{
+text-decoration: none;
+color: #fff;
+}
+
+.span_author a:hover{
+  color:blue;
 }
 
 .post_text {
@@ -42,4 +56,11 @@ background-color: white;
   position: relative;
   top: 10%;
   padding-left: 10px;
+}
+
+.tag{
+  border: 2px solid #fff;
+  font-size: 14pt;
+  padding: 10px;
+  border-radius: 4px;
 }

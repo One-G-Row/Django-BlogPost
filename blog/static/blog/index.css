@@ -6,8 +6,9 @@
   top: 8vh;
 }
 
-.profile:hover{
-background-color: white;
+.profile:hover {
+  background-color: white;
+  
 }
 
 .profile img {
@@ -34,13 +35,14 @@ background-color: white;
   position: absolute;
   left: 22%;
   top: 5%;
+ 
 }
 
 .profile-heading:hover {
   transition: transform 0.3s ease; /* Smooth transition for the transform effect */
   transform: translateZ(0);
   transform: scale(1.1);
-  color: rgb(123, 123, 172);
+  color:  rgb(123, 123, 172);
 }
 
 .profile-text {
@@ -56,7 +58,6 @@ background-color: white;
   transition: transform 0.3s ease; /* Smooth transition for the transform effect */
   transform: translateZ(1);
   transform: scale(1.1);
-  color: #fff;
 }
 
 .index-cards {
@@ -70,6 +71,7 @@ background-color: white;
   transition: transform 0.3s ease; /* Smooth transition for the transform effect */
   transform: translateZ(0);
   transform: scale(1.1);
+  color: rgb(123, 123, 172);
 }
 
 .images-container {
@@ -114,7 +116,12 @@ background-color: white;
   font-weight: bold;
 }
 
+.index-date {
+  font-weight: bold;
+}
+
 .index-heading:hover,
+.index-date:hover,
 .index-author:hover,
 .index-excerpt:hover {
   color: rgb(123, 123, 172);

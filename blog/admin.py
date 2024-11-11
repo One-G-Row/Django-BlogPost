@@ -9,6 +9,7 @@ class AuthorAdmin(admin.ModelAdmin):
 class PostAdmin(admin.ModelAdmin):
     list_display = ("title", "excerpt", "image_name", "date", "slug", "content", "author")
     list_filter = ("title", "author")
+    prepopulated_fields = {"slug": ("title",)}
 
 
 class TagAdmin(admin.ModelAdmin):

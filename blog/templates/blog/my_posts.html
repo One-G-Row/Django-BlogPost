@@ -9,6 +9,13 @@
     {% include "blog/includes/header.html"%}
     <div class="post_title">
         <h1>{{ title }}<h1>
+        <div>
+        {% for tag in tags %}
+            <span class="tag">{{ tag.caption }}</span>
+        {% endfor %}
+        </div>
+        <p class="span_author">By <a href="mailto:{{ author.email_address }}">{{author}}</a></p>
+        <p class="span_date">Updated on {{date}}</p>
     </div>
     <div class="post_text">
         <p>{{ content }}</p>
